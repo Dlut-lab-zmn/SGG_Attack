@@ -2,6 +2,11 @@
 
 Title: Adversarial Attacks on Scene Graph Generation
 
+Abstract: Scene graph generation (SGG) effectively improves semantic understanding of the visual world. However, the recent interest of researchers focuses on improving SGG in non-adversarial settings, which raises our curiosity about the robustness of SGG models. In this work, we perform the adversarial attack on two typical SGG tasks, Scene Graph Detection (SGDet) and Scene Graph Classification (SGCls).
+Considering the inconsistency between the specified bounding boxes in SGCls and the scene graph selected as the attack target, a bounding box relabeling method is introduced to rebuild a reasonable attack target.
+Then, we propose a two-step weighted attack by removing the predicted objects and relational triples that affect attack performance, which significantly improves the success rate of adversarial attacks on both SGDet and SGCls tasks.
+Extensive experiments demonstrate the effectiveness of the proposed method on five popular SGG models and four adversarial attacks.
+
 - **This project is based on [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark) and [scene graph benchmark](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch)**
 - **[Adv_BOX](https://github.com/advboxes/AdvBox/blob/a4ecf3026aa3e125463c513f93c4e2abf92a5120/adversarialbox/attacks/gradient_method.py)**
 - **[Foll_Box](https://github.com/bethgelab/foolbox/blob/1c55ee4d6847247eb50f34dd361ed5cd5b5a10bb/foolbox/attacks/gradient_descent_base.py)**
