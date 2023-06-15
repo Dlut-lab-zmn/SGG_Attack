@@ -2,7 +2,6 @@
 Adversarial Attacks on Scene Graph Generation
 
 # Scene Graph Benchmark in PyTorch 1.7
-
 -**This project is based on [maskrcnn-benchmark] and [scene graph benchmark]**
 -**Adv_BOX = https://github.com/advboxes/AdvBox/blob/a4ecf3026aa3e125463c513f93c4e2abf92a5120/adversarialbox/attacks/gradient_method.py**
 -**Foll_Box = https://github.com/bethgelab/foolbox/blob/1c55ee4d6847247eb50f34dd361ed5cd5b5a10bb/foolbox/attacks/gradient_descent_base.py**
