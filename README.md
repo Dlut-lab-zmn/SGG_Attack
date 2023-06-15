@@ -120,7 +120,7 @@ python od_adv_box/attack.py --config_file =$config_file  --model_rel=$model_rel
 
 python od_adv_box/attack_SGCls.py --config_file =$config_file  --model_rel=$model_rel
 ```
-Choose the available config_file from `./sgg_attack/sgg_configs' and set the model_rel to `Motifs_Pred_Cls', `Motifs_Pred_Cls'/'Reldn_Pred_Cls'/'Imp_Pred_Cls'/'Msdn_Pred_Cls'/'Grcnn_Pred_Cls'
+Choose the available config_file from `./sgg_attack/sgg_configs` and set the model_rel to `Motifs_Pred_Cls', `Motifs_Pred_Cls'/'Reldn_Pred_Cls'/'Imp_Pred_Cls'/'Msdn_Pred_Cls'/'Grcnn_Pred_Cls'
 
 
 
