@@ -1,6 +1,4 @@
-# SGG_Attack
-
-Title: Adversarial Attacks on Scene Graph Generation
+# Title: Adversarial Attacks on Scene Graph Generation
 
 Abstract: Scene graph generation (SGG) effectively improves semantic understanding of the visual world. However, the recent interest of researchers focuses on improving SGG in non-adversarial settings, which raises our curiosity about the robustness of SGG models. In this work, we perform the adversarial attack on two typical SGG tasks, Scene Graph Detection (SGDet) and Scene Graph Classification (SGCls).
 Considering the inconsistency between the specified bounding boxes in SGCls and the scene graph selected as the attack target, a bounding box relabeling method is introduced to rebuild a reasonable attack target.
