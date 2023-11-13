@@ -1,3 +1,4 @@
+# Copyright (c) Mn,Zhao. All Rights Reserved.
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
