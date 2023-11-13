@@ -1,3 +1,4 @@
+# Copyright (c) Mn,Zhao. All Rights Reserved.
 from statistics import mode
 from scene_graph_benchmark.scene_parser import SceneParser
 from maskrcnn_benchmark.solver import make_optimizer
