@@ -1,3 +1,4 @@
+# Copyright (c) Mn,Zhao. All Rights Reserved.
 import argparse
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
