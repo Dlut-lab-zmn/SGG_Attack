@@ -1,3 +1,4 @@
+# Copyright (c) Mn,Zhao. All Rights Reserved.
 import torch
 from maskrcnn_benchmark.structures.boxlist_ops import cat_boxlist_with_fields
 from od_adv_box.models import Motifs as base_model
