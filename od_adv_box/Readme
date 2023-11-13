@@ -1,0 +1,9 @@
+We implement the basic iterative method, the projected gradient decent method, the sparse attack, the patch attack, the fast gradient sign method,the momentum-based method, etc.
+Please see details in gradient_attack.py.
+
+For attacking the object detection, 5 phases (each phase contains 10 iterations) are adopted with the initial epsilon to 0.1 and the stride of epsilon to 0.2.
+At the beginning of each phase, we increase the value of eposilon.
+
+For attacking the SGG, 5 phases (each phase contains 20 iterations) are adopted with the initial epsilon to 0.1 and the stride of epsilon to 0.2.
+At the beginning of each phase, we increase the value of eposilon.
+
