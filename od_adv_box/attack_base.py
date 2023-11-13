@@ -1,3 +1,4 @@
+# Copyright (c) Mn,Zhao. All Rights Reserved.
 from builtins import object
 import logging
 from abc import ABCMeta
