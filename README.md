@@ -121,7 +121,7 @@ python -m torch.distributed.launch --nproc_per_node=$NGPUS tools/test_sg_net.py 
 ## Perform attacking
 To attack in sgdet/sgcls mode:
 ```bash
-python od_adv_box/attack.py --config_file =$config_file  --model_rel=$model_rel
+python od_adv_box/attack_SGDet.py --config_file =$config_file  --model_rel=$model_rel
 
 python od_adv_box/attack_SGCls.py --config_file =$config_file  --model_rel=$model_rel
 ```
