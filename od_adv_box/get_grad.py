@@ -1,3 +1,4 @@
+# Copyright (c) Mn,Zhao. All Rights Reserved.
 def grad(image, loss, model):
     image = image
     #计算梯度
