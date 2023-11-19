@@ -40,9 +40,15 @@ def loss(model, input, images , targets, mode):
         return None
     loss = 0
     for mode_ in pos_mode:
-        loss +=  loss_dict[str(mode_)]
-    for mode_ in neg_mode:
-        loss -=  loss_dict[mode_]
+        alpha = 1.0
+        if 'Pred' in mode_:
+            alpha = 2.0
+        loss +=  alpha * loss_dict[str(mode_)]
+    for mode_ in pos_mode:
+        alpha = 1.0
+        if 'Pred' in mode_:
+            alpha = 2.0
+        loss +=  alpha * loss_dict[str(mode_)]
     return (loss,proposals , proposals_pairs) 
 
 
