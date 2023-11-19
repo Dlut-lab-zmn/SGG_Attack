@@ -48,7 +48,7 @@ class BasicIterativeMethodAttack(Attack):
                steps=20,
                epsilon_steps=5, 
                min_=0, max_ =  255,
-                is_validate = False,clip_each_iter = False):
+                is_validate = False,clip_each_iter = False,int_stype = False):
         # print(self.model.name)
         if norm_ord == 0:
             raise ValueError("L0 norm is not supported!")
@@ -99,7 +99,7 @@ class BasicIterativeMethodAttack(Attack):
                 else:
                     gradient_norm = gradient / self._norm(gradient, ord=norm_ord)
                 Total_perturbation += epsilon * gradient_norm
-                Total_perturbation = torch.clip(Total_perturbation, 0, int(budget)*255)
+                Total_perturbation = torch.clip(Total_perturbation, -int(budget*255), int(budget*255))
                 grad_mask = constant_grad_mask
                 if self.dynamic_select:
                     Total_gradient_mask = torch.sum(torch.abs(Total_perturbation),1, keepdim=True) * grad_mask
@@ -116,6 +116,8 @@ class BasicIterativeMethodAttack(Attack):
 
                 if clip_each_iter:
                     adv_img = self.recover_img(adv_img, normal, min_, max_)
+                        if int_stype:
+                            adv_img = adv_img.int()
                     adv_img = self.preprocess_img(adv_img,normal)
                 is_success = False
                 updated_flag = False
